@@ -1,0 +1,132 @@
+.about {
+  padding: 40px 0;
+  color: var(--main-text);
+  .about-wrapper {
+    width: 290px;
+    margin: 0 auto;
+  }
+  h3 {
+    letter-spacing: 0.001em;
+    padding-bottom: 10px;
+  }
+
+  h6 {
+    letter-spacing: 0.01em;
+  }
+
+  p {
+    padding: 36px 0;
+    margin: 0;
+    font-family: "Roboto-Condensed-Light", "sans-serif";
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.015em;
+  }
+
+  p:last-of-type {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .about {
+    padding: 61px 0 116px;
+    color: var(--main-text);
+    background-color: var(--basic-background);
+    position: relative;
+
+    .about-wrapper {
+      width: 678px;
+    }
+
+    h3 {
+      letter-spacing: 0.001em;
+      padding-bottom: 17px;
+      text-align: center;
+    }
+
+    h6 {
+      letter-spacing: 0.01em;
+      text-align: center;
+    }
+
+    p {
+      width: 502px;
+      margin: 0 auto;
+      padding: 35px 0 37px;
+      text-align: center;
+      font-family: "Roboto-Condensed-Light", "sans-serif";
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.015em;
+    }
+
+    p:last-of-type {
+      display: none;
+    }
+
+    img {
+      width: 678px;
+      height: auto;
+      padding: 0 45px;
+    }
+    .about-iframe {
+      position: absolute;
+      bottom: 35px;
+      left: 249px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about {
+    display: flex;
+    gap: 100px;
+    padding: 120px 0 208px;
+    color: var(--main-text);
+    background-color: var(--basic-background);
+    position: relative;
+
+    .about-wrapper {
+      width: 355px;
+      margin: 0 0 0 103px;
+    }
+
+    h3 {
+      letter-spacing: 0.001em;
+      padding-bottom: 25px;
+      text-align: left;
+    }
+
+    h6 {
+      letter-spacing: 0.01em;
+      text-align: left;
+    }
+
+    p {
+      width: 373px;
+      margin: 0 auto;
+      padding: 94px 0 8px;
+      text-align: left;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.015em;
+    }
+
+    p:last-of-type {
+      display: block;
+      padding: 0 0 37px;
+    }
+
+    img {
+      width: 660px;
+      height: auto;
+      padding: 0 45px;
+    }
+    .about-iframe {
+      position: absolute;
+      bottom: 125px;
+      left: 503px;
+    }
+  }
+}

@@ -2,3 +2,24 @@
 // ---------------------------------
 
 @import "vendor/normalize";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "global/variables.scss";
+@import "block/body.scss";
+@import "block/wrapper.scss";
+@import "block/hero.scss";
+@import "block/header.scss";
+@import "block/about.scss";
+@import "block/iframe.scss";
+@import "block/price.scss";
+@import "block/tabs.scss";
+@import "block/card.scss";
+@import "block/game.scss";
+@import "block/juri.scss";
+@import "block/features.scss";
+@import "block/offers.scss";
+@import "block/faq.scss";
+@import "block/reviews.scss";
+@import "block/form.scss";
+@import "block/footer.scss";
+@import "vendor/swiper-bundle.min.css";

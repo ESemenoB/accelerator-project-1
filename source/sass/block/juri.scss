@@ -1,0 +1,356 @@
+.juri {
+  padding: 40px 0;
+  background: var(--basic-background);
+  color: var(--dark-text);
+  h3 {
+    text-align: center;
+    color: var(--main-text);
+    margin-bottom: 20px;
+  }
+}
+
+.juri-swiper-wrapper {
+  .swiper-slide {
+    width: 260px !important;
+  }
+}
+.juri-slider {
+  width: 260px;
+  margin: 0 15px;
+  position: relative;
+  .trainer-description {
+    display: none;
+    h6 {
+      text-align: center;
+      letter-spacing: 0.2px;
+    }
+  }
+}
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.juri-slider:hover {
+  position: relative;
+  .trainer-description {
+    display: block;
+  }
+}
+.trainer {
+  padding: 253px 0 25px;
+  h6 {
+    text-align: center;
+    font-size: 22px;
+    line-height: 1;
+  }
+}
+
+.trainer-description {
+  width: 260px;
+  min-height: 300px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  z-index: 1;
+  background: #102654e3;
+  h6 {
+    padding-top: 61px;
+  }
+  .trainer-skill {
+    text-align: center;
+    margin: 10px 0 12px;
+  }
+}
+.skill-list {
+  width: 160px;
+  margin: 0 auto;
+  padding: 0 0 0 31px;
+  li {
+    position: relative;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+  }
+  li::before {
+    content: "";
+    position: absolute;
+    left: -16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background: url("../../img/sprite/marker.svg") no-repeat center;
+  }
+}
+.trainer-Pavlova {
+  background-image: image-set(
+    url("../../img/trainer-Pavlova@x1.webp") 1x,
+    url("../../img/trainer-Pavlova@x2.webp") 2x
+  );
+}
+
+.trainer-Lavrov {
+  background-image: image-set(
+    url("../../img/trainer-Lavrov@x1.webp") 1x,
+    url("../../img/trainer-Lavrov@x2.webp") 2x
+  );
+}
+
+.trainer-Pashkov {
+  background-image: image-set(
+    url("../../img/trainer-Pashkov@x1.webp") 1x,
+    url("../../img/trainer-Pashkov@x2.webp") 2x
+  );
+}
+.trainer-Ketova {
+  background-image: image-set(
+    url("../../img/trainer-Ketova@x1.webp") 1x,
+    url("../../img/trainer-Ketova@x2.webp") 2x
+  );
+}
+
+.button__swiper--next,
+.button__swiper--prev {
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  --arrow: var(--dark-background);
+  svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  svg:hover {
+    --arrow-circle: var(--dark-background);
+    --arrow: var(--dark-background);
+  }
+
+  svg:focus-visible {
+    --arrow-circle: var(--dark-background);
+    --arrow: var(--dark-background);
+    --arrow-fill: #e8e8e8;
+  }
+  svg:active {
+    --arrow-circle: var(--dark-background);
+    --arrow: var(--basic-background);
+    --arrow-fill: var(--dark-background);
+  }
+}
+.button__swiper--next {
+  transform: rotate(180deg);
+}
+.juri-wrapper {
+  position: relative;
+}
+
+.juri-button-next {
+  position: absolute;
+  top: 225px;
+  right: -12px;
+}
+
+.juri-button-prev {
+  position: absolute;
+  top: 225px;
+  left: -12px;
+}
+@media screen and (min-width: 767px) {
+  .juri {
+    padding: 30px 0;
+    background: var(--basic-background);
+    color: var(--dark-text);
+    h3 {
+      font-size: 54px;
+      line-height: 1;
+      text-align: center;
+      color: var(--main-text);
+      margin-bottom: 46px;
+    }
+  }
+  .juri-swiper {
+    margin: 0 59px;
+  }
+
+  .juri-swiper-wrapper {
+    margin: 0 auto;
+    .swiper-slide {
+      width: 260px !important;
+      margin: 0;
+    }
+  }
+  .juri-slider {
+    width: 260px;
+    margin: 0 15px;
+    position: relative;
+    .trainer-description {
+      display: none;
+      h6 {
+        text-align: center;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .juri-slider:hover {
+    position: relative;
+    .trainer-description {
+      display: block;
+    }
+  }
+  .trainer {
+    padding: 253px 0 25px;
+    h6 {
+      text-align: center;
+      font-size: 22px;
+      line-height: 1;
+    }
+  }
+
+  .trainer-description {
+    width: 260px;
+    min-height: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    background: #102654e3;
+    h6 {
+      padding-top: 61px;
+    }
+    .trainer-skill {
+      text-align: center;
+      margin: 10px 0 12px;
+    }
+  }
+  .skill-list {
+    width: 160px;
+    margin: 0 auto;
+    padding: 0 0 0 31px;
+    li {
+      position: relative;
+      line-height: 22px;
+      letter-spacing: 0.1px;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      left: -16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background: url("../../img/sprite/marker.svg") no-repeat center;
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .juri {
+    padding: 100px 0;
+    background: var(--basic-background);
+    color: var(--dark-text);
+    h3 {
+      font-size: 54px;
+      line-height: 1;
+      text-align: center;
+      color: var(--main-text);
+      margin-bottom: 46px;
+    }
+  }
+  .juri-swiper {
+    margin: 0;
+  }
+
+  .juri-swiper-wrapper {
+    margin: 0 auto;
+    .swiper-slide {
+      width: 260px !important;
+      margin: 0;
+    }
+  }
+  .juri-slider {
+    width: 260px;
+    margin: 0 15px;
+    position: relative;
+    .trainer-description {
+      display: none;
+      h6 {
+        text-align: center;
+        letter-spacing: 0.2px;
+      }
+    }
+  }
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .juri-slider:hover {
+    position: relative;
+    .trainer-description {
+      display: block;
+    }
+  }
+  .trainer {
+    padding: 253px 0 25px;
+    h6 {
+      text-align: center;
+      font-size: 22px;
+      line-height: 1;
+    }
+  }
+
+  .trainer-description {
+    width: 260px;
+    min-height: 300px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    z-index: 1;
+    background: #102654e3;
+    h6 {
+      padding-top: 61px;
+    }
+    .trainer-skill {
+      text-align: center;
+      margin: 10px 0 12px;
+    }
+  }
+  .skill-list {
+    width: 160px;
+    margin: 0 auto;
+    padding: 0 0 0 31px;
+    li {
+      position: relative;
+      line-height: 22px;
+      letter-spacing: 0.1px;
+    }
+    li::before {
+      content: "";
+      position: absolute;
+      left: -16px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background: url("../../img/sprite/marker.svg") no-repeat center;
+    }
+  }
+
+  .juri-button-next {
+    position: absolute;
+    top: 222px;
+    right: -71px;
+  }
+
+  .juri-button-prev {
+    position: absolute;
+    top: 222px;
+    left: -71px;
+  }
+}

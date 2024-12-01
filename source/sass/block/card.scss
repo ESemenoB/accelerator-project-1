@@ -1,0 +1,126 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 35px;
+  .card {
+    position: relative;
+    padding: 50px 42px;
+    background-color: var(--basic-background);
+    h4 {
+      text-align: center;
+      color: var(--main-text);
+      letter-spacing: 0.015em;
+      padding-left: 2px;
+      margin-bottom: 18px;
+    }
+    .card-description {
+      margin: 0 auto;
+      text-align: center;
+      letter-spacing: 0.015em;
+      padding-left: 1px;
+      color: var(--main-text);
+    }
+
+    .card-shadow {
+      margin: 29px 0 0;
+      text-align: center;
+      color: var(--price-shadow);
+      top: 141px;
+      letter-spacing: 1px;
+    }
+
+    .card-price-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: -45px 0 32px;
+      .card-price {
+        line-height: 1;
+        letter-spacing: 0.01em;
+        margin: 0;
+        padding-left: 2px;
+        color: var(--accent-text);
+      }
+      svg {
+        padding: 4px 0 0 10px;
+        width: 24px;
+        height: 35px;
+      }
+    }
+
+    .card-button {
+      letter-spacing: 0.015em;
+      z-index: auto;
+      position: relative;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .cards {
+    row-gap: 40px;
+    .card {
+      padding: 64px 64px 65px;
+      h4 {
+        margin-bottom: 22px;
+      }
+      .card-shadow {
+        margin: 36px 0 0;
+        color: var(--price-shadow);
+      }
+
+      .card-price-wrapper {
+        margin: -55px 0 39px;
+        .card-price {
+          line-height: 1;
+          letter-spacing: 0.01em;
+          margin: 0;
+          padding-left: 2px;
+          color: var(--accent-text);
+        }
+        svg {
+          padding: 4px 0 0 12px;
+          width: 34px;
+          height: 43px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .cards {
+    flex-direction: row;
+    gap: 40px;
+    .card {
+      width: 230px;
+      padding: 64px 65px 65px;
+
+      h4 {
+        letter-spacing: 0.013em;
+        padding-left: 1px;
+        margin-bottom: 17px;
+      }
+      .card-shadow {
+        margin: 30px 0 0;
+        top: 162px;
+        left: auto;
+      }
+
+      .card-price-wrapper {
+        margin: -54px 0 34px;
+        .card-price {
+          line-height: 1;
+          letter-spacing: 0.01em;
+          margin: 0;
+          padding-left: 2px;
+          color: var(--accent-text);
+        }
+        svg {
+          width: 34px;
+          height: 43px;
+        }
+      }
+    }
+  }
+}

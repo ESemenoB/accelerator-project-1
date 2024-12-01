@@ -1,0 +1,187 @@
+.games {
+  padding: 25px 0;
+  color: var(--dark-text);
+  background-color: var(--basic-background);
+
+  .game-description {
+    padding: 40px;
+
+    background-color: var(--banner-background);
+    h2 {
+      width: 117px;
+    }
+
+    .game-date {
+      display: flex;
+      gap: 37px;
+    }
+
+    .game-date--list {
+      display: grid;
+      grid-template-columns: 16px 40px;
+      grid-template-rows: 23px 13px 17px 24px 24px;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+    }
+
+    .table-title-date {
+      grid-area: 1 / 1 / 2 / 3;
+      margin-top: -1px;
+    }
+    .table-number {
+      margin-top: 1px;
+      grid-area: 2 / 1 / 4 / 2;
+    }
+    .table-month {
+      margin-top: 2px;
+      grid-area: 2 / 2 / 3 / 3;
+    }
+    .table-year {
+      grid-area: 3 / 2 / 4 / 3;
+    }
+    .table-title-time {
+      grid-area: 4 / 1 / 5 / 3;
+    }
+    .table-time {
+      grid-area: 5 / 1 / 6 / 3;
+      margin-top: 1px;
+      letter-spacing: 0.5px;
+    }
+
+    .description-races {
+      letter-spacing: 0.3px;
+    }
+
+    .description-buttons {
+      letter-spacing: 0.2px;
+    }
+
+    .border {
+      border-bottom: 1px solid var(--dark-text);
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .games {
+    padding: 60px 0;
+    .game-wrapper {
+      display: flex;
+    }
+    .game-description {
+      width: 220px;
+      padding: 40px;
+
+      h2 {
+        width: 100px;
+      }
+
+      .game-date {
+        display: flex;
+        gap: 20px;
+      }
+
+      .game-date--list {
+        grid-template-columns: 18px 82px;
+        grid-template-rows: 26px 24px 31px 27px 24px;
+      }
+
+      .table-title-date {
+        grid-area: 1 / 1 / 2 / 3;
+        margin-top: -1px;
+      }
+      .table-number {
+        margin-top: 11px;
+        grid-area: 2 / 1 / 4 / 2;
+      }
+      .table-month {
+        margin-top: 2px;
+        grid-area: 2 / 2 / 3 / 3;
+      }
+      .table-year {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+      .table-title-time {
+        grid-area: 4 / 1 / 5 / 3;
+      }
+      .table-time {
+        grid-area: 5 / 1 / 6 / 3;
+        margin-top: 1px;
+        letter-spacing: 0.5px;
+      }
+
+      .description-races {
+        margin: 11px 0 11px;
+        letter-spacing: 0.3px;
+      }
+
+      .description-buttons {
+        letter-spacing: 0.2px;
+        padding: 25px 0;
+      }
+    }
+    .game-image {
+      height: 348px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .games {
+    padding: 100px 0;
+    .game-wrapper {
+      display: flex;
+    }
+    .game-description {
+      width: 340px;
+      padding: 61px 80px;
+      h2 {
+        width: 170px;
+      }
+
+      .game-date {
+        display: flex;
+        gap: 78px;
+      }
+
+      .game-date--list {
+        grid-template-columns: 26px 69px;
+        grid-template-rows: 29px 28px 40px 32px 38px;
+      }
+
+      .table-title-date {
+        margin-top: -3px;
+      }
+      .table-number {
+        margin-top: 7px;
+      }
+      .table-month {
+        margin-top: 3px;
+      }
+      .table-year {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+      .table-title-time {
+        grid-area: 4 / 1 / 5 / 3;
+      }
+      .table-time {
+        grid-area: 5 / 1 / 6 / 3;
+        margin-top: 4px;
+        letter-spacing: 1px;
+      }
+
+      .description-races {
+        margin: 27px 0 32px;
+        letter-spacing: 0.3px;
+      }
+
+      .description-buttons {
+        letter-spacing: 0.2px;
+        padding: 25px 0;
+      }
+    }
+    .game-image {
+      height: 500px;
+    }
+  }
+}

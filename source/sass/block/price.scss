@@ -1,0 +1,35 @@
+.price {
+  padding: 40px 0 10px;
+  background-color: var(--additional-background);
+  h3 {
+    color: var(--main-text);
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .price {
+    padding: 61px 0 15px;
+    background-color: var(--additional-background);
+    background-image: image-set(
+      url("../../img/price-pancakes@x1.webp") 1x,
+      url("../../img/price-pancakes@x2.webp") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .price {
+    padding: 100px 0 15px;
+    background-color: var(--additional-background);
+    background-image: image-set(
+      url("../../img/price-pancakes@x1.webp") 1x,
+      url("../../img/price-pancakes@x2.webp") 2x
+    );
+    background-repeat: no-repeat;
+    background-position: 107.5% 102%;
+    background-size: 377px 454px; // h3 {
+  }
+}

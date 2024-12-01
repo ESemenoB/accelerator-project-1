@@ -1,0 +1,37 @@
+:root {
+  ///фон
+  --basic-background: #ffffff;
+  --additional-background: #f8f9fc;
+  --banner-background: #ed0233;
+  --dark-background: #102654;
+  --blocks-background: #1c3374;
+  --home-screen: linear-gradient(
+    90deg,
+    #1c3477 0%,
+    #1c3477 0.01%,
+    #1a3578 39.11%,
+    #73184b 75.5%,
+    #b4022a 100%
+  );
+
+  --tabs-button: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  --futer-background: #030a1a;
+  --icon-hover: #74819c;
+
+  /// текст
+  --main-text: #102654;
+  --dark-text: #ffffff;
+  --accent-text: #103aae;
+  --price-shadow: #e8e8e8;
+  --additional-gradient: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+
+  /// кнопки
+  --stroke-dark-background: #ffffff;
+  --outline-light-background: #102654;
+  --outline-light-background-extra: #1c3374;
+  --tabs: #d10a42;
+  --button-gradient: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+
+  /// форма
+  --form-error: #ff121f;
+}

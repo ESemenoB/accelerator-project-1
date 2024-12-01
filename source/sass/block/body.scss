@@ -1,0 +1,13 @@
+body {
+  width: 320px;
+  margin: 0 auto;
+  font-family: "AlumniSans-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  @media screen and (min-width: 767px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 1366px;
+  }
+}

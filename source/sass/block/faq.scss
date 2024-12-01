@@ -1,0 +1,323 @@
+.faq__tabs input[type="radio"] {
+  display: none;
+}
+
+.faq__tabs label {
+  display: block;
+  text-align: center;
+  width: 140px;
+  padding: 15px 0;
+  color: var(--main-text);
+  box-shadow: inset 0px 0px 0px 1px rgba(16, 38, 84, 0.2);
+}
+
+.faq__tabs--content {
+  display: none;
+}
+
+.faq__tabs input[type="radio"]:checked + label + .faq__tabs--content {
+  display: block;
+}
+
+.faq__tabs input[type="radio"]:checked + label {
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: var(--dark-text);
+  box-shadow: none;
+}
+
+.faq__tabs label:hover {
+  box-shadow: inset 0px 0px 0px 1px var(--dark-background);
+  color: var(--main-text);
+}
+
+.faq__tabs label:focus {
+  box-shadow: inset 0px 0px 0px 1px var(--dark-background);
+  color: var(--main-text);
+  background-color: var(--basic-background);
+}
+
+.faq {
+  padding: 70px 0;
+  background-color: var(--additional-background);
+
+  h3 {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+}
+.faq__tabs {
+  padding: 0;
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 35px;
+  label {
+    cursor: pointer;
+  }
+
+  &--card {
+    padding: 20px 0;
+    color: var(--main-text);
+    border-top: 1px solid var(--icon-hover);
+    P {
+      font-family: "Roboto-Condensed-Light";
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}
+
+.faq__tabs--accordion {
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .accordion-item:last-of-type {
+    border-bottom: 1px solid var(--icon-hover);
+  }
+
+  .accordion-item {
+    border-top: 1px solid var(--icon-hover);
+    color: var(--main-text);
+    padding: 20px 0;
+    svg {
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      --circle-line: #1c3374;
+      --horizontal-line: #1c3374;
+      --vertical-line: #1c3374;
+    }
+
+    svg:hover {
+      background-color: #1c3374;
+      --horizontal-line: #ffffff;
+      --vertical-line: #ffffff;
+    }
+
+    svg:focus {
+      background-color: var(--icon-hover);
+      --circle-line: #1c3374;
+      --horizontal-line: #ffffff;
+      --vertical-line: #ffffff;
+    }
+
+    div {
+      margin: 0px;
+      padding: 0 5px 0 0px;
+      cursor: pointer;
+      position: relative;
+      h5 {
+        width: 238px;
+        letter-spacing: 0.01em;
+        nobr {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  .accordion-item:last-of-type {
+    border-bottom: 1px solid var(--icon-hover);
+  }
+
+  .toggle {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translatey(-50%);
+    width: 30px;
+    height: 30px;
+  }
+
+  p {
+    font-family: "Roboto-Condensed-Light";
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 15px;
+    display: block;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    margin: 0;
+  }
+
+  .accordion-item.open {
+    p {
+      max-height: 500px;
+      padding: 20px 50px 0 0px;
+      letter-spacing: 0.015em;
+    }
+  }
+
+  .accordion-item .toggle {
+    transition: transform 0.3s ease;
+  }
+
+  .accordion-item.open .toggle {
+    svg {
+      --horizontal-line: #ffffff;
+      background-color: #102654;
+      --vertical-line: none;
+    }
+    svg:hover {
+      --horizontal-line: #ffffff;
+      background-color: #102654;
+      --vertical-line: none;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .faq__tabs label {
+    display: block;
+    text-align: center;
+    width: 162px;
+    padding: 18px 0;
+    color: var(--main-text);
+    box-shadow: inset 0px 0px 0px 1px rgba(16, 38, 84, 0.2);
+  }
+
+  .faq {
+    padding: 61px 0;
+    background-color: var(--additional-background);
+
+    h3 {
+      margin-bottom: 44px;
+    }
+  }
+  .faq__tabs {
+    margin: 0 0 45px;
+
+    &--card {
+      padding: 20px 0;
+      color: var(--main-text);
+      border-top: 1px solid var(--icon-hover);
+      P {
+        font-family: "Roboto-Condensed-Light";
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+
+  .faq__tabs--accordion {
+    .accordion {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .accordion-item:last-of-type {
+      gap: 20px;
+      border-bottom: 1px solid var(--icon-hover);
+    }
+
+    .accordion-item {
+      border-top: 1px solid var(--icon-hover);
+      color: var(--main-text);
+      padding: 22px 0 16px;
+      svg {
+        width: 40px;
+        height: 40px;
+      }
+
+      div {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        h5 {
+          width: 500px;
+        }
+      }
+    }
+
+    .toggle {
+      width: 40px;
+      height: 40px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      width: 520px;
+      padding: 9px 50px 0 0px;
+      overflow: hidden;
+      max-height: 0;
+      margin: 0;
+    }
+
+    .accordion-item.open {
+      padding: 23px 0 24px;
+
+      p {
+        width: 560px;
+        max-height: 500px;
+        padding: 9px 50px 0 0px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .faq__tabs label {
+    font-size: 18px;
+    width: 260px;
+    padding: 19px 0 17px;
+  }
+
+  .faq {
+    padding: 100px 0;
+    background-color: var(--additional-background);
+
+    h3 {
+      text-align: left;
+      margin-bottom: 49px;
+    }
+  }
+
+  .faq__content {
+    display: flex;
+    gap: 40px;
+  }
+  .faq__tabs {
+    flex-direction: column;
+    margin: 1px 0 45px;
+  }
+
+  .faq__tabs--accordion {
+    width: 860px;
+
+    .accordion-item {
+      padding: 22px 0 14px;
+
+      div {
+        h5 {
+          width: 650px;
+        }
+      }
+    }
+
+    p {
+      width: 520px;
+      letter-spacing: 0.015em;
+      padding: 9px 50px 0 0px;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.5s ease, padding 0.5s ease;
+      margin: 0;
+    }
+
+    .accordion-item.open {
+      padding: 23px 0 24px;
+
+      p {
+        width: 645px;
+        max-height: 500px;
+        padding: 22px 50px 0 0px;
+        letter-spacing: 0.015em;
+      }
+    }
+  }
+}

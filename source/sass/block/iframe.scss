@@ -1,0 +1,81 @@
+.iframe-container {
+  margin-top: 32px;
+  width: 320px;
+  height: 170px;
+  bottom: 125px;
+  background-color: #ffffff;
+  background-image: image-set(
+    url("../../img/iframe-mobile@x1.webp") 1x type("image/webp"),
+    url("../../img/iframe-mobile@x2.webp") 2x type("image/webp")
+  );
+
+  a {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    margin: 0 auto;
+    padding: 49px 0;
+  }
+}
+:root {
+  --border-color: rgb(237, 2, 51, 0.2);
+  --triangle-color: #ffffff;
+}
+
+svg:hover {
+  --border-color: #10265499;
+  --triangle-color: #10265499;
+}
+
+svg:focus {
+  --border-color: #102654;
+  --circle-color: ##c8c9cc;
+  --triangle-color: #102654;
+}
+svg:active {
+  --border-color: #102654;
+  --circle-color: #ffffff;
+  --triangle-color: #102654;
+}
+
+@media screen and (min-width: 767px) {
+  .iframe-container {
+    margin-top: 0;
+    width: 270px;
+    height: 170px;
+    bottom: 125px;
+    background-color: #ffffff;
+    background-image: image-set(
+      url("../../img/iframe-tablet@x1.webp") 1x type("image/webp"),
+      url("../../img/iframe-tablet@x2.webp") 2x type("image/webp")
+    );
+
+    a {
+      width: 72px;
+      height: 72px;
+      display: flex;
+      margin: 0 auto;
+      padding: 49px 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .iframe-container {
+    width: 360px;
+    height: 230px;
+    bottom: 125px;
+    background-image: image-set(
+      url("../../img/iframe-decktop@x1.webp") 1x type("image/webp"),
+      url("../../img/iframe-decktop@x2.webp") 2x type("image/webp")
+    );
+
+    a {
+      width: 100px;
+      height: 100px;
+      display: flex;
+      margin: 0 auto;
+      padding: 65px 0;
+    }
+  }
+}
